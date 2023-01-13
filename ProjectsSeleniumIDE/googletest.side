@@ -1,0 +1,133 @@
+{
+  "id": "5d6a34c1-d096-4a95-a55f-5a79ae9a6e8a",
+  "version": "2.0",
+  "name": "googletest",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "b829458e-8090-4701-85f5-a635f333973e",
+    "name": "googlesearchbar",
+    "commands": [{
+      "id": "7c91792b-c7f9-4f0b-b86f-dd9d89d687a6",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51b5c3ec-9179-4cb8-89c4-06c0182d2730",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "c8cf933f-0341-4bc2-9734-29adfefb6d36",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "88c9b1c4-ad98-43c8-904c-9ea2ae32d24e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94229b48-4818-444c-9153-7df23377c703",
+      "comment": "",
+      "command": "open",
+      "target": "www.google.com",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "28f502d3-a2cd-4eab-946c-7eecde81e4a9",
+    "name": "googleCamSimbol",
+    "commands": [{
+      "id": "17499148-6705-4fe5-837a-0bd88fa0dca9",
+      "comment": "",
+      "command": "open",
+      "target": "https://google.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b68ff5ac-1296-42ee-ad0e-6e35ecbe114f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "895x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c13a4a8a-95b8-46f4-8263-79c747d2f3a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Gdd5U",
+      "targets": [
+        ["css=.Gdd5U", "css:finder"],
+        ["xpath=//img[@alt='Búsqueda con cámara']", "xpath:img"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "039877c9-c8a9-421c-b76c-6e82e4cc4453",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cB9M7",
+      "targets": [
+        ["css=.cB9M7", "css:finder"],
+        ["xpath=//div[@id='ow6']/div[3]/c-wiz/div[2]/div/div[3]/div[2]/c-wiz/div[2]/input", "xpath:idRelative"],
+        ["xpath=//c-wiz/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92aefac6-8984-413d-bed2-36d9d05dc4dc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.cB9M7",
+      "targets": [
+        ["css=.cB9M7", "css:finder"],
+        ["xpath=//div[@id='ow6']/div[3]/c-wiz/div[2]/div/div[3]/div[2]/c-wiz/div[2]/input", "xpath:idRelative"],
+        ["xpath=//c-wiz/div[2]/input", "xpath:position"]
+      ],
+      "value": "https://en.wikipedia.org/wiki/Cat_intelligence#/media/File:RedCat_8727.jpg"
+    }, {
+      "id": "b51bf41d-6ed3-4e40-a49d-d8023b61ba26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Qwbd3",
+      "targets": [
+        ["css=.Qwbd3", "css:finder"],
+        ["xpath=//div[@id='ow6']/div[3]/c-wiz/div[2]/div/div[3]/div[2]/c-wiz/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/c-wiz/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8754504c-2f20-4ee9-8f63-1dca0d865c90",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b829458e-8090-4701-85f5-a635f333973e"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

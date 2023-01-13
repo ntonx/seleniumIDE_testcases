@@ -1,0 +1,42 @@
+{
+  "id": "7e621cff-3a78-4823-9f2b-d63f912f6f17",
+  "version": "2.0",
+  "name": "AmazonTest",
+  "url": "https://www.amazon.com",
+  "tests": [{
+    "id": "f5c9089e-9d9d-4dc9-b88c-850a622244a0",
+    "name": "AmazonSearchIphone",
+    "commands": [{
+      "id": "ef857038-da4c-472f-a18d-a34d848b8674",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a570561b-6d4c-4d89-ac17-11ae6beba86c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fd9b5e1-1465-4db5-9b46-3e1f51a2ede9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "be8a0f55-c01a-4803-baa5-b43f4dd26fce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f5c9089e-9d9d-4dc9-b88c-850a622244a0"]
+  }],
+  "urls": [],
+  "plugins": []
+}

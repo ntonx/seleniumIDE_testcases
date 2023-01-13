@@ -1,0 +1,216 @@
+{
+  "id": "ebd6aa1d-a825-4eb4-b1ce-73e6bf8025c5",
+  "version": "2.0",
+  "name": "TestingLoginWithMultipleUsers",
+  "url": "http://localhost:9090",
+  "tests": [{
+    "id": "6b0d4061-770d-4942-b614-ff6052fd0bfb",
+    "name": "ValidCredentials",
+    "commands": [{
+      "id": "ce9bc400-ebc3-47ad-bee4-4c03132a86b2",
+      "comment": "",
+      "command": "store",
+      "target": "anicolas",
+      "targets": [],
+      "value": "user"
+    }, {
+      "id": "2003c2b0-4ed0-4f30-9493-d2f96fcd522f",
+      "comment": "",
+      "command": "store",
+      "target": "hg5MHYCGBJd8zir",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "b5ab0ed5-9b0f-435a-8a55-7a5f6304c382",
+      "comment": "",
+      "command": "run",
+      "target": "LoginTest",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f7722a32-736e-4ae1-bb2c-93bf82498891",
+    "name": "LoginTest",
+    "commands": [{
+      "id": "7547d509-7bfe-4435-ae91-80a26caea4e0",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fdb5f6d-921e-46a6-848a-259b534983c8",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "251134fa-64dd-4ac0-b508-42f91af76e25",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_username",
+      "targets": [
+        ["id=j_username", "id"],
+        ["name=j_username", "name"],
+        ["css=#j_username", "css:finder"],
+        ["xpath=//input[@id='j_username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5072da58-8b18-4303-899c-ba471aa4f49c",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_username",
+      "targets": [],
+      "value": "${user}"
+    }, {
+      "id": "58254c35-b386-4b44-9853-007fb7fed3ce",
+      "comment": "",
+      "command": "click",
+      "target": "name=j_password",
+      "targets": [
+        ["name=j_password", "name"],
+        ["css=.jenkins-form-item:nth-child(2) > .jenkins-input", "css:finder"],
+        ["xpath=//input[@name='j_password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcba573b-9269-4fca-a493-c8c3773afa71",
+      "comment": "",
+      "command": "type",
+      "target": "name=j_password",
+      "targets": [],
+      "value": "${password}"
+    }, {
+      "id": "8ed96c9e-2f88-4777-930a-be0c17b02f88",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=.jenkins-button", "css:finder"],
+        ["xpath=//button[@name='Submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19e68e36-6614-42e8-9f02-5b62e1a21204",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=breadcrumbBar",
+      "targets": [
+        ["id=breadcrumbBar", "id"],
+        ["css=#breadcrumbBar", "css:finder"],
+        ["xpath=//div[@id='breadcrumbBar']", "xpath:attributes"],
+        ["xpath=//body[@id='jenkins']/div", "xpath:idRelative"],
+        ["xpath=//body/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Panel de Control')]", "xpath:innerText"]
+      ],
+      "value": "Panel de Control"
+    }, {
+      "id": "b7ba2e40-786f-46b8-ad04-2131ab332a2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Panel de Control",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d41ba5f3-1996-46e8-b625-14e6b38c03c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(4) > .icon-md",
+      "targets": [
+        ["css=a:nth-child(4) > .icon-md", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "282431d3-afe6-4e4b-aa41-d58f334f2bde",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e13b1eb8-ab2d-4a32-b3e6-30df6c2e7eb4",
+      "comment": "",
+      "command": "// Save variables using store in command (command=store, target=<contentVariable>, Value=<nameVariable,>)Save variables using store in command (command=store, target=<contentVariable>, Value=<nameVariable>)",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be9f98c8-c733-4864-b37c-68e078d337e9",
+      "comment": "",
+      "command": "// Use variables, as in ValidCredentials, we can consume variables as ${nameVariable}",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3170ee0-60b6-4775-ab95-8167f7eba96e",
+      "comment": "",
+      "command": "// In this case we can call a test script from another test scrit, first define variables using store, then call with run command",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "121cba95-0a4f-4b5d-b557-44a11278c424",
+      "comment": "",
+      "command": "// The script that contains variables must execute as main script",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16936b14-80e0-4994-b6c0-b6328a43a775",
+      "comment": "",
+      "command": "// assert command help to check if content is available in webpage, as a current check point to help we are in the correct page",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01499e1a-b88d-45dc-93ab-f7f5eaf4d340",
+      "comment": "",
+      "command": "// wait for element visible command to set milisecond (value ) to await the next step , target is the element to wait)",
+      "target": "",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "5ea8cd70-da19-4068-93ff-d681d33f0ac4",
+    "name": "InvalidCredentials",
+    "commands": [{
+      "id": "5ebfed11-0812-48e7-aa0f-a3ae912cdf1f",
+      "comment": "",
+      "command": "store",
+      "target": "anicolas",
+      "targets": [],
+      "value": "user"
+    }, {
+      "id": "bd7c51e3-9fad-4260-bf69-121a459340d9",
+      "comment": "",
+      "command": "store",
+      "target": "badpassword",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "008426f1-31f2-4a41-8ce0-84253ed2cc70",
+      "comment": "",
+      "command": "run",
+      "target": "LoginTest",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "64a69cd5-2b24-404e-a030-b917d7868ca5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6b0d4061-770d-4942-b614-ff6052fd0bfb"]
+  }],
+  "urls": ["https://thedemosite.co.uk/login.php", "http://localhost:9090/"],
+  "plugins": []
+}
